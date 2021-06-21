@@ -1,50 +1,261 @@
-wait(0.5)
-local ba = Instance.new("ScreenGui")
-local ca = Instance.new("TextLabel")
-local da = Instance.new("Frame")
-local _b = Instance.new("TextLabel")
-local ab = Instance.new("TextLabel")
-ba.Parent = game.CoreGui
-ba.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ca.Parent = ba
-ca.Active = true
-ca.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
-ca.Draggable = true
-ca.Position = UDim2.new(0.698610067, 0, 0.098096624, 0)
-ca.Size = UDim2.new(0, 370, 0, 52)
-ca.Font = Enum.Font.SourceSansSemibold
-ca.Text = "Anti AFK Script"
-ca.TextColor3 = Color3.new(0, 1, 1)
-ca.TextSize = 22
-da.Parent = ca
-da.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
-da.Position = UDim2.new(0, 0, 1.0192306, 0)
-da.Size = UDim2.new(0, 370, 0, 107)
-_b.Parent = da
-_b.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
-_b.Position = UDim2.new(0, 0, 0.800455689, 0)
-_b.Size = UDim2.new(0, 370, 0, 21)
-_b.Font = Enum.Font.Arial
-_b.Text = "Made by Dynamic. (made as loadstring by adrian.0001) (please subscribe)"
-_b.TextColor3 = Color3.new(0, 1, 1)
-_b.TextSize = 20
-_b.TextWrapped = true
-_b.TextScaled = true
-ab.Parent = da
-ab.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
-ab.Position = UDim2.new(0, 0, 0.158377, 0)
-ab.Size = UDim2.new(0, 370, 0, 44)
-ab.Font = Enum.Font.ArialBold
-ab.Text = "Status: Active"
-ab.TextColor3 = Color3.new(0, 1, 1)
-ab.TextSize = 20
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local account_circle = Instance.new("ImageButton")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local TextLabel_12 = Instance.new("TextLabel")
+local TextLabel_13 = Instance.new("TextLabel")
+local TextLabel_14 = Instance.new("TextLabel")
+local TextLabel_15 = Instance.new("TextLabel")
+local TextLabel_16 = Instance.new("TextLabel")
+local TextLabel_17 = Instance.new("TextLabel")
+local TextLabel_18 = Instance.new("TextLabel")
+local TextLabel_19 = Instance.new("TextLabel")
+ 
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.761857688, 0, 0.626936793, 0)
+Frame.Size = UDim2.new(0, 235, 0, 307)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Position = UDim2.new(0.131914899, 0, 0.0228013024, 0)
+TextLabel.Size = UDim2.new(0, 90, 0, 38)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "ANTI"
+TextLabel.TextColor3 = Color3.new(1, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.Position = UDim2.new(0.108510636, 0, 0.908794761, 0)
+TextLabel_2.Size = UDim2.new(0, 201, 0, 23)
+TextLabel_2.Font = Enum.Font.GothamBlack
+TextLabel_2.Text = "Made by adrian.#0001"
+TextLabel_2.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_3.BackgroundTransparency = 1
+TextLabel_3.Position = UDim2.new(0.029787235, 0, 0.162866428, 0)
+TextLabel_3.Size = UDim2.new(0, 220, 0, 38)
+TextLabel_3.Font = Enum.Font.GothamBold
+TextLabel_3.Text = "STATUS:"
+TextLabel_3.TextColor3 = Color3.new(1, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14
+TextLabel_3.TextWrapped = true
+
+TextLabel_4.Parent = Frame
+TextLabel_4.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_4.BackgroundTransparency = 1
+TextLabel_4.Position = UDim2.new(0.23829788, 0, 0.270358294, 0)
+TextLabel_4.Size = UDim2.new(0, 122, 0, 30)
+TextLabel_4.Font = Enum.Font.GothamBold
+TextLabel_4.Text = "Active."
+TextLabel_4.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14
+TextLabel_4.TextWrapped = true
+
+TextLabel_5.Parent = Frame
+TextLabel_5.BackgroundColor3 = Color3.new(1, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0, 0, 0.162866428, 0)
+TextLabel_5.Size = UDim2.new(0, 5, 0, 63)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = ""
+TextLabel_5.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_5.TextSize = 14
+
+TextLabel_6.Parent = Frame
+TextLabel_6.BackgroundColor3 = Color3.new(1, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.978723407, 0, 0.162866428, 0)
+TextLabel_6.Size = UDim2.new(0, 5, 0, 63)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = ""
+TextLabel_6.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_6.TextSize = 14
+
+TextLabel_7.Parent = Frame
+TextLabel_7.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_7.BackgroundTransparency = 1
+TextLabel_7.Position = UDim2.new(0.0212765951, 0, 0.48859933, 0)
+TextLabel_7.Size = UDim2.new(0, 222, 0, 62)
+TextLabel_7.Font = Enum.Font.GothamSemibold
+TextLabel_7.Text = "Discord.gg/Swagmode for support and epicness."
+TextLabel_7.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14
+TextLabel_7.TextWrapped = true
+
+TextLabel_8.Parent = Frame
+TextLabel_8.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_8.BackgroundTransparency = 1
+TextLabel_8.Position = UDim2.new(0.485106349, 0, 0.0228013024, 0)
+TextLabel_8.Size = UDim2.new(0, 90, 0, 38)
+TextLabel_8.Font = Enum.Font.GothamBold
+TextLabel_8.Text = "AFK"
+TextLabel_8.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14
+TextLabel_8.TextWrapped = true
+
+account_circle.Name = "account_circle"
+account_circle.Parent = Frame
+account_circle.BackgroundTransparency = 1
+account_circle.Position = UDim2.new(0.0191489551, 0, 0.908794761, 0)
+account_circle.Size = UDim2.new(0, 21, 0, 21)
+account_circle.ZIndex = 2
+account_circle.Image = "rbxassetid://3926307971"
+account_circle.ImageColor3 = Color3.new(1, 0, 0)
+account_circle.ImageRectOffset = Vector2.new(124, 204)
+account_circle.ImageRectSize = Vector2.new(36, 36)
+
+TextLabel_9.Parent = Frame
+TextLabel_9.BackgroundColor3 = Color3.new(1, 0, 0)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.978723407, 0, 0.368078172, 0)
+TextLabel_9.Size = UDim2.new(0, 5, 0, 194)
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = ""
+TextLabel_9.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_9.TextSize = 14
+
+TextLabel_10.Parent = Frame
+TextLabel_10.BackgroundColor3 = Color3.new(1, 0, 0)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(0, 0, 0.368078172, 0)
+TextLabel_10.Size = UDim2.new(0, 5, 0, 194)
+TextLabel_10.Font = Enum.Font.SourceSans
+TextLabel_10.Text = ""
+TextLabel_10.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_10.TextSize = 14
+
+TextLabel_11.Parent = Frame
+TextLabel_11.BackgroundColor3 = Color3.new(1, 0, 0)
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(0.978723407, 0, 0, 0)
+TextLabel_11.Size = UDim2.new(0, 5, 0, 50)
+TextLabel_11.Font = Enum.Font.SourceSans
+TextLabel_11.Text = ""
+TextLabel_11.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_11.TextSize = 14
+
+TextLabel_12.Parent = Frame
+TextLabel_12.BackgroundColor3 = Color3.new(1, 0, 0)
+TextLabel_12.BorderSizePixel = 0
+TextLabel_12.Size = UDim2.new(0, 5, 0, 50)
+TextLabel_12.Font = Enum.Font.SourceSans
+TextLabel_12.Text = ""
+TextLabel_12.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_12.TextSize = 14
+
+TextLabel_13.Parent = Frame
+TextLabel_13.BackgroundColor3 = Color3.new(1, 0, 0)
+TextLabel_13.BorderSizePixel = 0
+TextLabel_13.Position = UDim2.new(0, 0, 4.0512532e-08, 0)
+TextLabel_13.Size = UDim2.new(0, 235, 0, 5)
+TextLabel_13.Font = Enum.Font.SourceSans
+TextLabel_13.Text = ""
+TextLabel_13.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_13.TextSize = 14
+
+TextLabel_14.Parent = Frame
+TextLabel_14.BackgroundColor3 = Color3.new(1, 0, 0)
+TextLabel_14.BorderSizePixel = 0
+TextLabel_14.Position = UDim2.new(0, 0, 0.892508209, 0)
+TextLabel_14.Size = UDim2.new(0, 235, 0, 5)
+TextLabel_14.Font = Enum.Font.SourceSans
+TextLabel_14.Text = ""
+TextLabel_14.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_14.TextSize = 14
+
+TextLabel_15.Parent = Frame
+TextLabel_15.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_15.BackgroundTransparency = 1
+TextLabel_15.Position = UDim2.new(0.0212765951, 0, 0.690553725, 0)
+TextLabel_15.Size = UDim2.new(0, 222, 0, 62)
+TextLabel_15.Font = Enum.Font.GothamSemibold
+TextLabel_15.Text = "This works for any ROBLOX game available. B)"
+TextLabel_15.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_15.TextScaled = true
+TextLabel_15.TextSize = 14
+TextLabel_15.TextWrapped = true
+
+TextLabel_16.Parent = Frame
+TextLabel_16.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_16.BackgroundTransparency = 1
+TextLabel_16.Position = UDim2.new(0.0255319141, 0, 0.384364814, 0)
+TextLabel_16.Size = UDim2.new(0, 220, 0, 32)
+TextLabel_16.Font = Enum.Font.GothamBold
+TextLabel_16.Text = "INFO:"
+TextLabel_16.TextColor3 = Color3.new(1, 0, 0)
+TextLabel_16.TextScaled = true
+TextLabel_16.TextSize = 14
+TextLabel_16.TextWrapped = true
+
+TextLabel_17.Parent = Frame
+TextLabel_17.BackgroundColor3 = Color3.new(1, 0, 0)
+TextLabel_17.BorderSizePixel = 0
+TextLabel_17.Position = UDim2.new(0, 0, 0.368078202, 0)
+TextLabel_17.Size = UDim2.new(0, 235, 0, 5)
+TextLabel_17.Font = Enum.Font.SourceSans
+TextLabel_17.Text = ""
+TextLabel_17.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_17.TextSize = 14
+
+TextLabel_18.Parent = Frame
+TextLabel_18.BackgroundColor3 = Color3.new(1, 0, 0)
+TextLabel_18.BorderSizePixel = 0
+TextLabel_18.Position = UDim2.new(0.0212765951, 0, 0.146579802, 0)
+TextLabel_18.Size = UDim2.new(0, 225, 0, 5)
+TextLabel_18.Font = Enum.Font.SourceSans
+TextLabel_18.Text = ""
+TextLabel_18.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_18.TextSize = 14
+
+TextLabel_19.Parent = Frame
+TextLabel_19.BackgroundColor3 = Color3.new(1, 0, 0)
+TextLabel_19.BorderSizePixel = 0
+TextLabel_19.Position = UDim2.new(0, 0, 0.983713388, 0)
+TextLabel_19.Size = UDim2.new(0, 235, 0, 5)
+TextLabel_19.Font = Enum.Font.SourceSans
+TextLabel_19.Text = ""
+TextLabel_19.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_19.TextSize = 14
+
+NAMEHERE.Text = "Signed in As " .. game.Players.LocalPlayer.Name
+
 local bb = game:service "VirtualUser"
+
 game:service "Players".LocalPlayer.Idled:connect(
-    function()
-        bb:CaptureController()
-        bb:ClickButton2(Vector2.new())
-        ab.Text = "Roblox Tried to kick you but we didnt let them kick you :D"
-        wait(2)
-        ab.Text = "Status : Active"
-    end
+	function()
+		bb:CaptureController()
+		bb:ClickButton2(Vector2.new())
+		ab.Text = "Roblox Tried to kick you but we didnt let them kick you :D"
+		wait(2)
+		ab.Text = "Status : Active"
+	end
 )
